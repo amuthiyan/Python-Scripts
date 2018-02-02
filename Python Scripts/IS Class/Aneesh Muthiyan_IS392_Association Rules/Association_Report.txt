@@ -1,0 +1,21 @@
+1) This program was developed in Python, and generates a set of Association rules 
+from a provided index file, so as to find useful patterns within the text.
+
+2) With a minimum support of 0.25 and a minimun confidence of 0.7
+the algorithm generated 53 Association Rules, of which the top ten are:
+
+['test'] => cricket; support=0.38498789346246975, confidence=0.9217391304347827
+['africa'] => world; support=0.3789346246973366, confidence=0.9178885630498534
+['win'] => world; support=0.38498789346246975, confidence=0.9008498583569405
+['australia'] => world; support=0.4406779661016949, confidence=0.8792270531400965
+['american'] => world; support=0.38498789346246975, confidence=0.8217054263565892
+['player'] => world; support=0.4128329297820823, confidence=0.7985948477751756
+['cricket'] => world; support=0.463680387409201, confidence=0.7913223140495868
+['player'] => ball; support=0.38619854721549635, confidence=0.747072599531616
+['ball'] => world; support=0.3934624697336562, confidence=0.7352941176470588
+['ball'] => player; support=0.38619854721549635, confidence=0.7217194570135745
+
+3) Overall, decreasing the minimun support or the minimum confidence gave me more association
+rules, but of a lesser quality. However, having the minimum thresholds be too high led to few rules
+and at the same time they were so obvious as to be useless. In the end I chose the current
+thresholds because they appear the ideal combination of quantity and quality.

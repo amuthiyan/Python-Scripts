@@ -1,0 +1,54 @@
+Number of rules generated: 53
+['pakistan'] => cricket; support=0.2675544794188862, confidence=0.9444444444444444
+['africa'] => cricket; support=0.3353510895883777, confidence=0.812316715542522
+['test'] => cricket; support=0.38498789346246975, confidence=0.9217391304347827
+['cricket'] => world; support=0.463680387409201, confidence=0.7913223140495868
+['wicket'] => cricket; support=0.2675544794188862, confidence=1.0
+['australia'] => cricket; support=0.36803874092009686, confidence=0.7342995169082126
+['win'] => cricket; support=0.30145278450363194, confidence=0.7053824362606231
+['pakistan'] => world; support=0.2602905569007264, confidence=0.9188034188034188
+['ball'] => world; support=0.3934624697336562, confidence=0.7352941176470588
+['player'] => ball; support=0.38619854721549635, confidence=0.747072599531616
+['ball'] => player; support=0.38619854721549635, confidence=0.7217194570135745
+['africa'] => world; support=0.3789346246973366, confidence=0.9178885630498534
+['africa'] => australia; support=0.31113801452784506, confidence=0.7536656891495602
+['american'] => world; support=0.38498789346246975, confidence=0.8217054263565892
+['test'] => world; support=0.3474576271186441, confidence=0.8318840579710146
+['test'] => australia; support=0.30024213075060535, confidence=0.718840579710145
+['player'] => world; support=0.4128329297820823, confidence=0.7985948477751756
+['australia'] => world; support=0.4406779661016949, confidence=0.8792270531400965
+['win'] => world; support=0.38498789346246975, confidence=0.9008498583569405
+['win'] => australia; support=0.30145278450363194, confidence=0.7053824362606231
+['africa', 'test'] => cricket; support=0.2566585956416465, confidence=0.9636363636363636
+['cricket', 'africa'] => test; support=0.2566585956416465, confidence=0.7653429602888087
+['africa', 'world'] => cricket; support=0.3026634382566586, confidence=0.7987220447284344
+['cricket', 'africa'] => world; support=0.3026634382566586, confidence=0.9025270758122743
+['africa', 'australia'] => cricket; support=0.2602905569007264, confidence=0.8365758754863812
+['cricket', 'australia'] => africa; support=0.2602905569007264, confidence=0.7072368421052632
+['cricket', 'africa'] => australia; support=0.2602905569007264, confidence=0.7761732851985559
+['test', 'world'] => cricket; support=0.31476997578692495, confidence=0.9059233449477352
+['cricket', 'test'] => world; support=0.31476997578692495, confidence=0.8176100628930817
+['test', 'australia'] => cricket; support=0.2845036319612591, confidence=0.9475806451612904
+['cricket', 'australia'] => test; support=0.2845036319612591, confidence=0.7730263157894738
+['cricket', 'test'] => australia; support=0.2845036319612591, confidence=0.738993710691824
+['cricket', 'player'] => world; support=0.2602905569007264, confidence=0.8022388059701493
+['world', 'australia'] => cricket; support=0.3220338983050847, confidence=0.7307692307692307
+['cricket', 'australia'] => world; support=0.3220338983050847, confidence=0.8749999999999999
+['cricket', 'win'] => world; support=0.26634382566585957, confidence=0.8835341365461848
+['world', 'player'] => ball; support=0.29418886198547217, confidence=0.7126099706744868
+['ball', 'player'] => world; support=0.29418886198547217, confidence=0.761755485893417
+['ball', 'world'] => player; support=0.29418886198547217, confidence=0.7476923076923078
+['ball', 'australia'] => world; support=0.25544794188861986, confidence=0.8406374501992032
+['africa', 'australia'] => world; support=0.29055690072639223, confidence=0.9338521400778209
+['africa', 'world'] => australia; support=0.29055690072639223, confidence=0.7667731629392971
+['africa', 'win'] => world; support=0.26150121065375304, confidence=0.9515418502202644
+['test', 'australia'] => world; support=0.26634382566585957, confidence=0.8870967741935484
+['test', 'world'] => australia; support=0.26634382566585957, confidence=0.7665505226480835
+['player', 'australia'] => world; support=0.28329297820823246, confidence=0.8698884758364313
+['player', 'win'] => world; support=0.2506053268765133, confidence=0.8999999999999999
+['australia', 'win'] => world; support=0.28329297820823246, confidence=0.9397590361445785
+['world', 'win'] => australia; support=0.28329297820823246, confidence=0.7358490566037735
+['test', 'world', 'australia'] => cricket; support=0.2506053268765133, confidence=0.9409090909090909
+['cricket', 'world', 'australia'] => test; support=0.2506053268765133, confidence=0.7781954887218046
+['cricket', 'test', 'australia'] => world; support=0.2506053268765133, confidence=0.8808510638297872
+['cricket', 'test', 'world'] => australia; support=0.2506053268765133, confidence=0.7961538461538461
