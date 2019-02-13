@@ -1,7 +1,0 @@
-This program works by reading the crawled web pages, 
-parsing the text using BeautifulSoup package, 
-and tokenising it, creating a list of words. 
-It then removes the stopwords using the nltk package. 
-Afterword, it creates an index file of all the words 
-and their frequencies. It also creates an index with 
-the positions of the words within the documents.
