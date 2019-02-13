@@ -1,2 +1,2 @@
-# Niteo-Internship
-Scripts I created during my internship at Niteo Technologies while learning Machine Learning
+# Data Analytics Script
+Scripts I created related to learning and applying Machine Learning concepts
