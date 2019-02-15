@@ -1,0 +1,63 @@
+swagger: '2.0'
+info:
+  description: This is the Swagger UI for the HR Analytics Pipeline.
+  version: 1.0.0
+  title: HR Analytics
+host: 'localhost:5000'
+tags:
+  - name: pipeline
+    description: How to use the HR Analytics Pipeline
+    externalDocs:
+      description: Find out more
+      url: 'http://swagger.io'
+schemes:
+  - http
+paths:
+  /pipeline:
+    post:
+      tags:
+        - Pipeline
+      summary: Uploads a JSON File
+      description: >-
+        Takes a JSON File of available data and returns predictions in a JSON
+        format.
+      operationId: uploadFile
+      consumes:
+        - multipart/form-data
+      produces:
+        - application/json
+      parameters:
+        - name: file
+          in: formData
+          description: file to upload
+          required: false
+          type: file
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/EmpPred'
+        '400':
+          description: Bad Request
+definitions:
+  EmpPred:
+    type: array
+    items:
+      type: object
+      properties:
+        index:
+          type: number
+        Empcode:
+          type: string
+        Prediction:
+          type: number
+  ApiResponse:
+    type: object
+    properties:
+      code:
+        type: integer
+        format: int32
+      type:
+        type: string
+      message:
+        type: string

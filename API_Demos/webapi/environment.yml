@@ -1,0 +1,12 @@
+name: flask
+channels:
+- defaults
+dependencies:
+-flask
+-python=3.6
+-pip:
+    -flask-wtf
+    -flask-sqlalchemy
+    -sqlalchemy-migrate
+prefix: C:\Users\amuth\webapp\flask
+

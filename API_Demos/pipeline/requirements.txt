@@ -1,0 +1,6 @@
+Flask
+Flask_Restful
+Numpy
+Pandas
+Sklearn
+Scipy

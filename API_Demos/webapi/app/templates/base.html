@@ -1,0 +1,23 @@
+<html>
+  <head>
+    {% if title %}
+    <title>{{ title }} - WebApp</title>
+    {% else %}
+    <title>Hey, include the title next time</title>
+    {% endif %}
+  </head>
+  <body>
+    <div>Webapp: <a href="/login">Login Page</a>   <a href="/register">Register</a></div>
+    <hr>
+    {% with messages = get_flashed_messages() %}
+	{% if messages %}
+	  <ul>
+	  {% for message in messages %}
+		<p>{{ message }}</p>
+	  {% endfor %}
+	  </ul>
+	{% endif %}
+    {% endwith %}
+    {% block content %}{% endblock %}
+  </body>
+</html>
