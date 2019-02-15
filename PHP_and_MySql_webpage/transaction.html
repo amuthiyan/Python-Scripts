@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title> TIJN Payment </title>
+
+<style>
+
+h1 {
+        font-size: 40px;
+    }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #708090;
+    width: 100%;
+    top: 0;
+
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+</style>
+
+	</head>
+
+	<body>
+
+	<div class="header">
+  <h1><center>TIJN Payment Network</center></h1>
+</div>
+
+	<ul> 
+        <li> <a href="signin.html"> Sign Out </a> </li>
+        <li> <a href="statement.html"> Statements/Search </a> </li>
+        <li> <a href="transaction.html"> Request/Send Money </a> </li>
+        <li> <a href="account.html"> Account </a> </li>
+
+    </ul>
+    <br>
+    <div class="row">
+    <div class="column">
+    <form action = "send_transaction.php">
+      <fieldset>
+        <legend><b>Send Money</b></legend>
+        <p>
+          <label>Transaction_ID</label>
+          <input type = "text" name='transact_id'
+                 id = "myText"/>
+        </p>
+        
+        <p>
+          <label>Sender SSN</label>
+          <input type = "text" name='send_ssn'
+                 id = "myText"/>
+        </p>
+        <p>
+          <label>Email/Phone Number</label>
+          <input type = "text" name='identifier'
+                 id = "myText"/>
+        </p>
+        <p>
+          <label>Memo</label>
+          <input type = "text" name = 'memo'/>
+        </p>
+        <p>
+          <label>Amount</label>
+          <input type = "number" name = 'amount'/>
+        </p>
+        <input type=submit value="Submit"><br><br>
+        <!-- <button type="submit" form="form1" value="Submit">Submit</button> -->
+        </fieldset>
+    </form>
+    </div>
+    <div class="column">
+<form action="req_transaction.php">
+<fieldset>
+    <legend><b>Request Money</b></legend>
+        <p>
+          <label>Request ID </label>
+          <input type = "text" name='req_id'
+                 id = "myText"/>
+        </p>
+        <p>
+          <label>Requester SSN</label>
+          <input type = "text" name='req_ssn'
+                 id = "myText"/>
+        </p>
+        <p>
+          <label>Email/Phone Number</label>
+          <input type = "text" name='identifier'
+                 id = "myText"/>
+        </p>
+        <p>
+          <label>Amount</label>
+          <input type = "number" name="amount"/>
+        </p>
+        <p>
+          <label>Memo</label>
+          <input type = "text" name = 'memo'/>
+        </p>
+        <input type=submit value="Submit"><br><br>
+        <!-- <button type="submit" form="form1" value="Submit">Submit</button> -->
+</fieldset>
+</form>
+</div>
+</div>
+
+	</body>
+</html>

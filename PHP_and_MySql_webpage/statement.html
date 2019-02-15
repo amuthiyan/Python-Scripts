@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title> TIJN Payment </title>
+
+<style>
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+    top: 0;
+
+}
+
+li {
+    float: right;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: gray;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: #0b7dda;
+}
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+</style>
+
+    </head>
+
+    <body>
+
+    <div class="header">
+  <h1><center>TIJN</center></h1>
+</div>
+
+    <ul> 
+        <li> <a href="signin.html"> Sign Out </a> </li>
+        <li> <a href="statement.html"> Statements/Search </a> </li>
+        <li> <a href="transaction.html"> Request/Send Money </a> </li>
+        <li> <a href="account.html"> Account </a> </li>
+
+    </ul>
+<br>
+<h1> Get Statements </h1>
+
+<form action="get_statement.php" style="margin:auto;max-width:300px">
+<fieldset>
+<legend><b>Get Monthly Summary</b></legend>
+  <input type="text" placeholder="User_SSN" name="user_ssn">
+  <input type="text" placeholder="Year" name="year">
+  <input type="text" placeholder="Month Number" name="month">
+  <input type=submit value="GO"><br><br>
+</fieldset>
+</form>
+
+<form action="statement_search.php" style="margin:auto;max-width:300px">
+<fieldset>
+<legend><b>Search By Date</b></legend>
+  <input type="text" placeholder="Sender_SSN" name="send_ssn">
+  <input type="text" placeholder="Phone/Email" name="ident">
+  <input type="text" placeholder="Date 1..." name="date1">
+  <input type="text" placeholder="Date 2..." name="date2">
+  <input type=submit value="GO"><br><br>
+</fieldset>
+</form>
+
+
+
+<form action="transaction_search.php" style="margin:auto;max-width:300px">
+<fieldset>
+<legend><b>Search Transaction</b></legend>
+  <input type="text" placeholder="Transaction ID..." name="trans_id">
+  <input type=submit value="GO"><br><br>
+</fieldset>
+</form>
+
+<br>
+
+
+
+    </body>
+</html>

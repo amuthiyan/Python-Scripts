@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title> TIJN Payment </title>
+
+<style>
+
+    h1 {
+        font-size: 40px;
+    }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #708090;
+    width: 100%;
+    top: 0;
+
+}
+
+li {
+    float: right;
+}
+
+li a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+</style>
+
+	</head>
+
+	<body>
+
+	<div class="header">
+  <h1><center>TIJN Payment Network</center></h1>
+</div>
+
+	<ul>
+		<li> <a href="signin.html"> Sign Out </a> </li>
+		<li> <a href="statement.html"> Statements/Search </a> </li>
+		<li> <a href="transaction.html"> Request/Send Money </a> </li>
+		<li> <a href="account.html"> Account </a> </li>
+
+	</ul>
+<br>
+<div class="row">
+<div class="column">
+<form action='personal_details.php'>
+      <fieldset>
+        <legend><b>Create New User</b></legend>
+
+        <p>
+          <label>SSN</label>
+          <input type = "text" name = "ssn"
+                 id = "ssn"/>
+        </p>
+
+        <p>
+          <label>Name</label>
+          <input type = "text" name = "name"
+                 id = "name"/>
+        </p>
+
+        <p>
+          <label>Bank ID</label>
+          <input type = "text" name = "bankid"
+                 id = "bankid"/>
+        </p>
+        <p>
+          <label>Bank Number</label>
+          <input type = "text" name = "banumber"
+								 id = "banumber"/>
+        </p>
+        <p>
+          <label>Email</label>
+          <input type = "text" name = "email"
+								 id = "email"/>
+        </p>
+        <p>
+          <label>Phone Number</label>
+          <input type = "text" name = "phone"
+								 id = "phone"/>
+        </p>
+        <!-- <button type="submit" form="form1" value="Submit">Submit</button> -->
+				<input type=submit value="Submit"><br><br>
+      </fieldset>
+  </form>
+  </div>
+  <div class="column">
+<form action = "add_banks.php">
+<fieldset>
+    <legend><b>Bank Account Additions</b></legend>
+        <p>
+          <label>SSN</label>
+          <input type = "text" name = "ssn_add"
+                 id = "ssn"/>
+        </p>
+        <p>
+          <label>Bank ID</label>
+          <input type = "text" name = "bankid_add"
+                 id = "myText"/>
+        </p>
+        <p>
+          <label>Bank Number</label>
+          <input type = "text" name = "banumber_add"
+                 id = "myText"/>
+        </p>
+        <input type=submit value="Submit"><br><br>
+        <!-- <button type="submit" form="form1" value="Submit">Submit</button> -->
+</fieldset>
+</form>
+</div>
+<div class="column">
+	<form action='verify.php'>
+	      <fieldset>
+	        <legend><b>Verify Bank Account</b></legend>
+	        <p>
+	          <label>Bank ID</label>
+	          <br>
+	          <input type = "text" name = "bankid_ver"
+	                 id = ""/>
+	        </p>
+
+	        <p>
+	          <label>Bank Number</label>
+	          <br>
+	          <input type = "text" name = "banumber_ver"
+	                 id = ""/>
+	        </p>
+	        <p>
+	          <label>Activation Code</label>
+	          <br>
+	          <input type = "text" name = "code"
+	                 id = ""/>
+	        </p>
+	        <input type=submit value="Verify"><br><br>
+	  <!--       <button type="submit" form="form1" value="Submit">Verify</button>  -->
+	        </fieldset>
+	    </form>
+    </div>
+
+</div>
+<div class="row">
+
+  <div class="column">
+<form action='email_changes.php'>
+      <fieldset>
+        <legend><b>Email Changes</b></legend>
+        <p>
+          <label>SSN</label>
+          <input type = "text" name = "ssn_change"
+                 id = "ssn"/>
+        </p>
+
+        <p>
+          <label>Email</label>
+          <input type = "text" name = "email_change"
+                 id = "myText"/>
+        </p>
+        <input type=submit value="Submit"><br><br>
+        <!-- <button type="submit" form="form1" value="Submit">Submit</button> -->
+        </fieldset>
+    </form>
+    </div>
+  <div class="column">
+<form action='ident_del.php'>
+      <fieldset>
+        <legend><b>Delete Phone/Email</b></legend>
+        <p>
+          <label>SSN</label>
+          <input type = "text" name = "ssn_change"
+                 id = "ssn"/>
+        </p>
+
+        <p>
+          <label>Phone/Email</label>
+          <input type = "text" name = "ident_del"
+                 id = "myText"/>
+        </p>
+        <input type=submit value="Submit"><br><br>
+        <!-- <button type="submit" form="form1" value="Submit">Submit</button> -->
+        </fieldset>
+    </form>
+    </div>
+  <div class="column">
+<form action='bank_del.php'>
+      <fieldset>
+        <legend><b>Delete Additional Bank Account</b></legend>
+        <p>
+          <label>SSN</label>
+          <input type = "text" name = "ssn_del"
+                 id = "ssn"/>
+        </p>
+       <p>
+	          <label>Bank ID</label>
+	          <br>
+	          <input type = "text" name = "bankid_del"
+	                 id = ""/>
+	        </p>
+
+	        <p>
+	          <label>Bank Number</label>
+	          <br>
+	          <input type = "text" name = "banumber_del"
+	                 id = ""/>
+	        </p>
+        <input type=submit value="Submit"><br><br>
+        <!-- <button type="submit" form="form1" value="Submit">Submit</button> -->
+        </fieldset>
+    </form>
+    </div>
+<div class="column">
+<form action = "phone_changes.php">
+<fieldset>
+    <legend><b>Phone Number Changes</b></legend>
+        <p>
+          <label>SSN</label>
+          <input type = "text" name = "ssn_change"
+                 id = "ssn"/>
+        </p>
+        <p>
+          <label>Phone Number</label>
+          <input type = "text" name = "phone_change"
+                 id = "myText"/>
+        </p>
+        <input type=submit value="Submit"><br><br>
+        <!-- <button type="submit" form="form1" value="Submit">Submit</button> -->
+</fieldset>
+</form>
+</div>
+<div class="column">
+<form action='verify_email.php'>
+      <fieldset>
+        <legend><b>Verify Phone/Email</b></legend>
+        <p>
+          <label>Phone Number/Email</label>
+          <input type = "text" name = "ident"
+                 id = ""/>
+        </p>
+        <p>
+          <label>Activation Code</label>
+          <input type = "text" name = "code"
+                 id = ""/>
+        </p>
+         <input type=submit value="Verify"><br><br>
+  <!--       <button type="submit" form="form1" value="Submit">Verify</button> -->
+        </fieldset>
+    </form>
+    </div>
+    </div>
+</div>
+	</body>
+</html>
